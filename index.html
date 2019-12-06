@@ -1,0 +1,37 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Видеофон</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="content">
+    <h1>Hello, world</h1>
+</div>
+
+<!-- взят видеоролик с разрешением 1920×1080, продолжительностью 15 секунд и весом чуть больше 3 МБ
+
+width – ширина области для воспроизведения ролика;
+height – высота области;
+preload – загрузка видео вместе со страницей;
+autoplay – автоматическое воспроизведение видео;
+loop – циклическое повторение видео;
+poster – изображение, которое отображается вместо видео, пока оно загружается либо недоступно
+
+-->
+<div id="video-bg">
+    <video width="100%" height="auto" preload="auto" autoplay="true"
+           loop="true" poster="bg/daisy-stock-poster.jpg" muted="muted">
+        <source src="bg/daisy-stock-h264-video.mp4" type="video/mp4"></source>
+        <source src="bg/daisy-stock-webm-video.webm" type="video/webm"></source>
+    </video>
+</div>
+
+</body>
+</html>
